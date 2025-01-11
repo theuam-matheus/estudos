@@ -45,12 +45,12 @@ class ContaBancaria:
             print("O valor da transferência deve ser positivo.")
 
 
-# Testando a funcionalidade de senha
+
 conta1 = ContaBancaria("João Silva", 1000, senha="abcd")
 conta2 = ContaBancaria("Maria Souza", 500, senha="1234")
 
 # Testando operações com senha correta e incorreta
-conta1.sacar(100, senha="abcd")  # Saque bem-sucedido
-conta1.sacar(100, senha="1234")  # Falha na senha
-conta1.transferir(200, conta2, senha="abcd")  # Transferência bem-sucedida
-conta1.transferir(200, conta2, senha="1234")  # Falha na senha
+conta1.sacar(100, senha="abcd")  
+conta1.sacar(100, senha="1234")  
+conta1.transferir(200, conta2, senha="abcd") 
+conta1.transferir(200, conta2, senha="1234")  
